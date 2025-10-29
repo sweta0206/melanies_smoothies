@@ -56,5 +56,6 @@ if st.button("Submit Order"):
     try:
         session.sql(my_insert_stmt).collect()
         st.success('Your Smoothie is ordered!', icon="✅");
-
+    except:
+        st.error("Insert failed; see error below")
 
