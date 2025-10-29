@@ -50,7 +50,7 @@ my_insert_stmt = f""" insert into smoothies.public.orders(ingredients, name_on_o
             values (' {ingredients_string} ', '{name_on_order}')"""
 
 #st.write(my_insert_stmt)
-st.stop()
+#st.stop()
 
 #st.write(my_insert_stmt)
 time_to_insert = st.button('submit Order')
